@@ -1,0 +1,63 @@
+{
+    "profile": {
+        "id": 1,
+        "name": "Abzed Mohammed",
+        "avatar": "https://res.cloudinary.com/abzedmohammed/image/upload/v1670316789/defaults/default_black_mv0upm.png",
+        "backgroundAvatar": "https://res.cloudinary.com/abzedmohammed/image/upload/v1673352765/defaults/film_pkhvt4.jpg",
+        "about": "Devops Engineer | Fullstack Developer | Cloud Developer"
+    },
+
+    "posts":[
+        {
+            "id": 1,
+            "name": "Abzed Mohammed",
+            "username": "@abzedizo",
+            "avatar": "https://res.cloudinary.com/abzedmohammed/image/upload/v1670316789/defaults/default_black_mv0upm.png",
+            "time": "2d ago",
+            "body": "Few vacations, family, friends and personal time. All in all we take on more challenges. Happy coding.",
+            "tags": "#coding #skillups #worldBFF",
+            "image": "https://res.cloudinary.com/abzedmohammed/image/upload/v1670426731/buildsoko/ggrzqvxxffrafbmncaeh.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Peter Nganga",
+            "username": "@ngangapeter",
+            "avatar": "https://res.cloudinary.com/abzedmohammed/image/upload/v1670316788/defaults/default_blue_zp4m9f.png",
+            "time": "5h ago",
+            "body": "📢📢 We are excited to announce the dates for the upcoming Cyber Security & Cloud Expo World Series 2023.",
+            "tags": "#cybersecurity #cloud",
+            "image": "https://res.cloudinary.com/abzedmohammed/image/upload/v1670316426/cld-sample-2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Jane Doe",
+            "username": "@j_doe",
+            "avatar": "https://res.cloudinary.com/abzedmohammed/image/upload/v1670316426/cld-sample.jpg",
+            "time": "5d ago",
+            "body": "USEFUL GIT COMMANDS.",
+            "tags": "#github #git #gitWorkFlow",
+            "image": "https://res.cloudinary.com/abzedmohammed/image/upload/v1670861754/sis/bn1cuzrztgeqzypuf13n.webp"
+        }
+
+    ],
+    "connections": [
+        {
+            "id": 1,
+            "name": "Samuel Smith",
+            "avatar": "https://res.cloudinary.com/abzedmohammed/image/upload/v1670861667/sis/t6zmye5dywga0zoejnin.jpg",
+            "about": "Frontend Developer | ReactJS | AngularJS | VueJS"
+        },
+        {
+            "id": 2,
+            "name": "Hamida Kauma",
+            "avatar": "https://res.cloudinary.com/abzedmohammed/image/upload/v1670861837/sis/svcvqv4lwow1qllct9tr.jpg",
+            "about": "Cloud Practitioner | Cloud Lecturer"
+        },
+        {
+            "id": 3,
+            "name": "Brandon Skavinski",
+            "avatar": "https://res.cloudinary.com/abzedmohammed/image/upload/v1670861507/sis/nmdwivvyepxgm1pxn1uf.jpg",
+            "about": "DevOps Senior Developer | AWS | Google Cloud | Microsoft Azure"
+        }
+    ]
+}

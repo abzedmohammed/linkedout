@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: linkedout-frontend-config
+  namespace: default
+data:
+  PREACT_APP_LINKEDOUT_BACKEND: http://34.23.143.123:3000
+
+  
+
+

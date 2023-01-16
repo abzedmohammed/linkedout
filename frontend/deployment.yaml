@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: linkedout-frontend
+    version: v1
+  name: linkedout-frontend
+  namespace: default
+
+spec:
+  replicas: 1
+  minReadySeconds: 10
+  selector:
+    matchLabels:
+      app: linkedout-frontend
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: linkedout-frontend
+        version: v1
+    spec:
+      containers:
+      - image: abzed/linkedout-frontend
+        imagePullPolicy: IfNotPresent
+        name: linkedout-frontend
+        env:
+          - name: PREACT_APP_LINKEDOUT_BACKEND
+            valueFrom:
+              configMapKeyRef:
+                key: PREACT_APP_LINKEDOUT_BACKEND
+                name: linkedout-frontend-config
+        resources:
+          requests:
+            cpu: 100m
+            memory: 512Mi
+          limits:
+            cpu: 200m
+            memory: 1024Mi
+      terminationGracePeriodSeconds: 5
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: linkedout-frontend
+  name: linkedout-frontend
+  namespace: default
+spec:
+  ports:
+  - port: 8000
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: linkedout-frontend
+  sessionAffinity: None
+  type: LoadBalancer

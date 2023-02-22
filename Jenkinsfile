@@ -29,15 +29,15 @@ pipeline {
 
     post {
         always {
-            "Always runs"
+            echo "Always runs"
         }
 
         success {
-            "After success"
+            echo "After success"
         }
 
         failure {
-            "After faild"
+            echo "After faild"
         }
 
         // change {

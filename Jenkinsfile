@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        dockerHome = tool 'myDocker'
-        PATH = "$dockerHome/bin:$PATH"
-    }
-
     stages {
         stage ('Install node') {
             steps{
@@ -35,10 +30,6 @@ pipeline {
     }
 
     post {
-        always {
-            echo "Always runs"
-        }
-
         success {
             echo "After success"
         }
